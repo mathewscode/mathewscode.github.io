@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Poppins", sans-serif;
     padding: 0;
@@ -37,6 +41,11 @@ header .content-links .list-links .link {
     color: #9696A0;
     text-decoration: none;
     padding: 10px 15px;
+    transition: 0.3s;
+}
+
+header .content-links .list-links .link:hover {
+    opacity: 50%;
 }
 
 header .content-theme {
@@ -54,6 +63,12 @@ header .content-theme .box-theme {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+}
+
+header .content-theme .box-theme:hover {
+    background-color: white;
+    color: black;
 }
 
 header .content-theme .box-theme .bx {
@@ -101,6 +116,13 @@ header .content-theme .box-theme .bx {
     border: none;
     border-radius: 16px;
     font-size: 15px;
+    transition: 0.3s;
+}
+
+.container-about-me .section-text .buttons .blog:hover {
+    background: #1E1F26;
+    border: 1px solid white;
+    color: white;
 }
 
 .container-about-me .section-text .buttons .file {
@@ -111,6 +133,13 @@ header .content-theme .box-theme .bx {
     border-radius: 16px;
     color: white;
     font-size: 15px;
+    transition: 0.3s;
+}
+
+.container-about-me .section-text .buttons .file:hover {
+    background: #FEFFFF;
+    border: 1px solid #FEFFFF;
+    color: black;
 }
 
 .container-about-me .section-text .view-more {
@@ -319,4 +348,80 @@ header .content-theme .box-theme .bx {
 .container-qualification .background-colored .content .item .espace hr {
     height: 130px;
     border: 2px solid #9696A0;
+}
+
+.container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 100px;
+}
+
+.container-contact .background{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.container-contact section {
+    background-color: #2E3039;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 50px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.container-contact section .details {
+    background-color: #2E3039;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-contact section .details .title {
+    font-size: 26px;
+}
+
+.container-contact section .details .subtitle {
+    font-size: 20px;
+}
+
+.container-contact section .details .desc {
+    color: #9696A0;
+    font-size: 18px;
+}
+
+.container-contact section .details .list {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.container-contact section .details .list li .link {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9696A0;
+    background-color: #1E1F26;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.container-contact section .details .list li .link:hover {
+    background-color: #FEFFFF;
+    color: black;
 }
