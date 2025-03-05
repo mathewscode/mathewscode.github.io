@@ -11,8 +11,10 @@ html {
 }
 
 body {
+    margin: 0 auto;
     background-color: #1E1F26;
     color: #FEFFFF;
+    max-width: 1400px;
 }
 
 header {
@@ -72,6 +74,30 @@ header .content-theme .box-theme:hover {
 }
 
 header .content-theme .box-theme .bx {
+    font-size: 22px;
+}
+
+header .content-menu {
+    display: none;
+}
+
+header .content-menu .box {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #9696A0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+header .content-menu .box:hover {
+    background-color: white;
+    color: black;
+}
+
+header .content-menu .box .bx {
     font-size: 22px;
 }
 
@@ -203,7 +229,7 @@ header .content-theme .box-theme .bx {
 }
 
 .container-projects {
-    padding: 35px 100px;
+    padding: 35px 60px;
 }
 
 .container-projects .content-top {
@@ -261,7 +287,6 @@ header .content-theme .box-theme .bx {
     align-items: center;
     justify-content: space-between;
     margin-top: 35px;
-    flex-wrap: wrap;
 }
 
 .container-projects .content-bottom .product {
@@ -303,7 +328,7 @@ header .content-theme .box-theme .bx {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 45px 100px;
+    padding: 45px 60px;
     gap: 30px;
 }
 
@@ -354,10 +379,10 @@ header .content-theme .box-theme .bx {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px 100px;
+    padding: 35px 60px;
 }
 
-.container-contact .background{
+.container-contact .background {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -424,4 +449,45 @@ header .content-theme .box-theme .bx {
 .container-contact section .details .list li .link:hover {
     background-color: #FEFFFF;
     color: black;
+}
+
+@media (max-width: 1200px) {
+    header .content-title .title {
+        font-size: 22px;
+    }
+
+    header .content-theme .box-theme {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .content-theme .box-theme .bx {
+        font-size: 18px;
+    }
+
+    .container-projects {
+        padding: 45px 60px;
+    }
+
+    .container-projects .content-bottom .product .background {
+        width: 300px;
+        height: 350px;
+    }
+
+    .container-qualification {
+        padding: 45px 60px;
+        gap: 30px;
+    }
+    
+
+    .container-contact {
+        padding: 35px 60px;
+    }
+
+    .container-contact section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
 }

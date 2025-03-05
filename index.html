@@ -25,7 +25,18 @@
                 <i class='bx bx-moon'></i>
             </div>
             <div class="box-theme">
-                <i class='bx bxl-github'></i>
+                <i class='bx bxl-github' id="github-link"></i>
+                <script>
+                    const link = document.getElementById("github-link");
+                    link.addEventListener("click", function (){
+                        window.open("https://github.com/mathewscode", "_blank")
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="content-menu .mobile">
+            <div class="box">
+                <i class='bx bx-menu-alt-right'></i>
             </div>
         </div>
     </header>
@@ -130,9 +141,25 @@
                 <h2 class="subtitle">Desenvolvedor Frontend & Backend</h2>
                 <p class="desc">A seguir meus contatos para projetos e colaborações.</p>
                 <ul class="list">
-                    <li><a href="" class="link"><i class='bx bxl-github'></i></a></li>
-                    <li><a href="" class="link"><i class='bx bx-envelope'></i></a></li>
-                    <li><a href="" class="link"><i class='bx bxl-linkedin'></i></a></li>
+                    <li><a href="" class="link" id="github-link-2"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="" class="link" id="email-link"><i class='bx bx-envelope'></i></a></li>
+                    <li><a href="" class="link" id="linkedin-link"><i class='bx bxl-linkedin'></i></a></li>
+                    <script>
+                        const github_link = document.getElementById("github-link-2");
+                        github_link.addEventListener("click", function (){
+                            window.open("https://github.com/mathewscode", "_blank")
+                        })
+
+                        const email_link = document.getElementById("email-link");
+                        email_link.addEventListener("click", function (){
+                            window.open("mailto:matheusynw3@gmail.com?subject=Assunto%20Aqui", "_blank")
+                        })
+
+                        const linkedin_link = document.getElementById("linkedin-link");
+                        linkedin_link.addEventListener("click", function (){
+                            window.open("https://github.com/mathewscode", "_blank")
+                        })
+                    </script>
                 </ul>
             </div>
         </section>
