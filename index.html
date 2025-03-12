@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,162 +8,118 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Matheus Sena -- Portfólio</title>
 </head>
+
 <body>
-    <header>
+    <div class="container-menu">
         <div class="content-title">
-            <span class="title">Matheus Sena</span>
+            <h1 class="title">Matheus Portfólio</h1>
         </div>
-        <div class="content-links">
+        <nav class="content-menu">
             <ul class="list-links">
-                <li><a href="#home" class="link">Sobre mim</a></li>
-                <li><a href="#projetos" class="link">Projetos</a></li>
-                <li><a href="#qualificacoes" class="link">Qualificações</a></li>
-                <li><a href="#contatos" class="link">Contatos</a></li>
+                <li><a id="homeId" href="#home" class="link"><i class='bx bxs-home'></i> Home</a></li>
+                <li><a id="aboutId" href="#sobre" class="link"><i class='bx bx-user'></i> Sobre</a></li>
+                <li><a id="projectsId" href="#projetos" class="link"><i class='bx bx-git-compare'></i> Projetos</a></li>
+                <li><a id="contactsId" href="#contato" class="link"><i class='bx bx-envelope'></i> Contato</a></li>
             </ul>
+        </nav>
+        <div class="content-copyright">
+            <p class="copyright-text">&copy; Matheus Santos - 2025</p>
         </div>
-        <div class="content-theme">
-            <div class="box-theme">
-                <i class='bx bx-moon'></i>
-            </div>
-            <div class="box-theme">
-                <i class='bx bxl-github' id="github-link"></i>
-                <script>
-                    const link = document.getElementById("github-link");
-                    link.addEventListener("click", function (){
-                        window.open("https://github.com/mathewscode", "_blank")
-                    })
-                </script>
-            </div>
-        </div>
-        <div class="content-menu .mobile">
-            <div class="box">
-                <i class='bx bx-menu-alt-right'></i>
-            </div>
-        </div>
-    </header>
-    <div class="container-about-me" id="home">
-        <div class="section-text">
-            <h1 class="title">Portfólio de Matheus - Inovação e Desenvolvimento</h1>
-            <p class="desc">Sou Matheus, tenho 16 anos e sou autodidata em Ciências da Computação. Este portfólio
-                reflete meu aprendizado contínuo e dedicação à tecnologia. Bem-vindo!</p>
-            <section class="buttons">
-                <button class="blog">Eu tenho um Blog</button>
-                <button class="file">Download CV</button>
-            </section>
-            <div class="view-more">
-                <div class="box">
-                    <i class='bx bxs-chevrons-down'></i>
+    </div>
+    <div class="container-main">
+        <div class="container-home" id="home">
+            <div class="content-details">
+                <h1 class="title">Bem-vindo(a)! Eu sou Matheus.</h1>
+                <p class="desc">Estudante de Ensino Médio Técnico em Marketing Digital (2º ano) e desenvolvedor de
+                    software autodidata, em preparação para ingressar na área de tecnologia.</p>
+                <div class="buttons">
+                    <button class="blog">Eu tenho um blog</button>
+                    <button class="cv">Download CV</button>
                 </div>
-                <a class="desc">Saiba mais sobre mim</a>
+                <a href="#sobre" class="link"><i class='bx bx-chevrons-down'></i> Saiba mais sobre mim</a>
+            </div>
+            <div class="content-background">
+                <img src="assets/images/profile.jpg" alt="Imagem de perfil." class="profile-photo">
             </div>
         </div>
-        <div class="section-background">
-            <img src="assets/images/background.png" alt="Image of background." class="background">
-        </div>
-    </div>
-    <div class="container-projects" id="projetos">
-        <div class="content-top">
-            <section class="main">
-                <h1 class="title">Meus Projetos</h1>
-                <h2 class="sub-title">Projetos desenvolvidos durante meu aprendizado</h2>
-            </section>
-            <section class="view-more">
-                <a href="#" class="desc">Todos os projetos</a>
-                <div class="box">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-            </section>
-        </div>
-        <div class="content-bottom">
-            <section class="product">
-                <img src="assets/images/not-project.png" alt="Image of project." class="background">
-                <section class="description">
-                    <h1 class="name">Projeto vazio</h1>
-                    <a href="#" class="blank">Descubra</a>
+        <div class="container-about" id="sobre">
+            <div class="content">
+                <section class="details">
+                    <h1 class="title">Sobre Mim</h1>
+                    <p class="desc">Olá, sou Matheus, um jovem de 16 anos com forte interesse em tecnologia e marketing
+                        digital. Estou cursando o 2º ano do Ensino Médio com curso técnico integrado de Marketing
+                        Digital, além de ter completado um curso de Gestão Empresarial pela EducaJovem. Atualmente,
+                        estou desenvolvendo habilidades em programação e desenvolvimento web.</p>
                 </section>
-            </section>
-            <section class="product">
-                <img src="assets/images/not-project.png" alt="Image of project." class="background">
-                <section class="description">
-                    <h1 class="name">Projeto vazio</h1>
-                    <a href="#" class="blank">Descubra</a>
-                </section>
-            </section>
-            <section class="product">
-                <img src="assets/images/not-project.png" alt="Image of project." class="background">
-                <section class="description">
-                    <h1 class="name">Projeto vazio</h1>
-                    <a href="#" class="blank">Descubra</a>
-                </section>
-            </section>
-        </div>
-    </div>
-    <div class="container-qualification" id="qualificacoes">
-        <h1 class="title">Minhas qualificações</h1>
-        <div class="background-colored">
-            <section class="content">
-                <section class="item">
-                    <h2 class="title">Formação Técnica em Marketing Digital</h2>
-                    <section class="espace">
-                        <hr>
-                        <p class="desc">Atualmente, estou cursando o segundo ano do ensino médio com o curso técnico de
-                            Marketing Digital oferecido pela SEDUC PI. Ao longo dessa formação, tenho adquirido
-                            conhecimentos em áreas essenciais para o mercado, como Marketing em Mídias e Redes Sociais,
-                            Google Analytics, Search Engine Optimization (SEO), Fundamentos de Design Digital e Redação
-                            para Marketing Digital.</p>
-                    </section>
-                </section>
-                <section class="item">
-                    <h2 class="title">Curso de Gestão Empresarial</h2>
-                    <section class="espace">
-                        <hr>
-                        <p class="desc">Realizei um curso de Gestão Empresarial oferecido pelo Instituto EducaJovem,
-                            onde adquiri conhecimentos importantes sobre a administração de empresas, incluindo áreas
-                            como planejamento estratégico, gestão financeira, recursos humanos e marketing.</p>
-                    </section>
-                </section>
-                <section class="item">
-                    <h2 class="title">Estudos Autodidatas em Tecnologia</h2>
-                    <section class="espace">
-                        <hr>
-                        <p class="desc">Estudo de forma autodidata linguagens e tecnologias como Python, JavaScript,
-                            HTML, CSS, MySQL e Inteligência Artificial. Tenho o objetivo de continuar aprendendo para me
-                            manter atualizado e competitivo no mercado de tecnologia.</p>
-                    </section>
-                </section>
-            </section>
-        </div>
-    </div>
-    <div class="container-contact" id="contatos">
-        <section>
-            <img src="assets/images/profile-photo.jpg" alt="" class="background">
-            <div class="details">
-                <h1 class="title">Matheus Sena</h1>
-                <h2 class="subtitle">Desenvolvedor Frontend & Backend</h2>
-                <p class="desc">A seguir meus contatos para projetos e colaborações.</p>
-                <ul class="list">
-                    <li><a href="" class="link" id="github-link-2"><i class='bx bxl-github'></i></a></li>
-                    <li><a href="" class="link" id="email-link"><i class='bx bx-envelope'></i></a></li>
-                    <li><a href="" class="link" id="linkedin-link"><i class='bx bxl-linkedin'></i></a></li>
-                    <script>
-                        const github_link = document.getElementById("github-link-2");
-                        github_link.addEventListener("click", function (){
-                            window.open("https://github.com/mathewscode", "_blank")
-                        })
+                <ul class="list-items">
+                    <li><i class='bx bxl-python'></i>
+                        <p class="item">Python</p>
+                    </li>
+                    <li><i class='bx bxl-html5'></i>
+                        <p class="item">HTML</p>
+                    </li>
+                    <li><i class='bx bxl-css3'></i>
+                        <p class="item">CSS</p>
+                    </li>
+                    <li><i class='bx bxl-sass'></i>
+                        <p class="item">SCSS</p>
+                    </li>
+                    <li><i class='bx bxs-data'></i>
+                        <p class="item">MySQL</p>
+                    </li>
+                    <li><i class='bx bxl-javascript'></i>
+                        <p class="item">JavaScript</p>
+                    </li>
 
-                        const email_link = document.getElementById("email-link");
-                        email_link.addEventListener("click", function (){
-                            window.open("mailto:matheusynw3@gmail.com?subject=Assunto%20Aqui", "_blank")
-                        })
-
-                        const linkedin_link = document.getElementById("linkedin-link");
-                        linkedin_link.addEventListener("click", function (){
-                            window.open("https://github.com/mathewscode", "_blank")
-                        })
-                    </script>
                 </ul>
             </div>
-        </section>
+        </div>
+        <div class="container-projects">
+            <h1 class="title">Meus projetos</h1>
+            <section class="box-projects">
+                <ul class="list">
+                    
+                    <li>
+                        <div class="box">
+                            <img src="assets/images/download.png" alt="Imagem do projeto." class="background">
+                            <section class="details">
+                                <span class="title">Sem conteúdo.</span>
+                                <section class="buttons">
+                                    <button class="view">Visualizar <i class='bx bx-sitemap'></i></button>
+                                    <button class="github">Repositório <i class='bx bx-git-branch' ></i></button>
+                                </section>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img src="assets/images/download.png" alt="Imagem do projeto." class="background">
+                            <section class="details">
+                                <span class="title">Sem conteúdo.</span>
+                                <section class="buttons">
+                                    <button class="view">Visualizar <i class='bx bx-sitemap'></i></button>
+                                    <button class="github">Repositório <i class='bx bx-git-branch' ></i></button>
+                                </section>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <img src="assets/images/download.png" alt="Imagem do projeto." class="background">
+                            <section class="details">
+                                <span class="title">Sem conteúdo.</span>
+                                <section class="buttons">
+                                    <button class="view">Visualizar <i class='bx bx-sitemap'></i></button>
+                                    <button class="github">Repositório <i class='bx bx-git-branch' ></i></button>
+                                </section>
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
+    <script src="assets/scripts/script.js"></script>
 </body>
+
 </html>
