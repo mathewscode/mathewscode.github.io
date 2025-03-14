@@ -306,3 +306,48 @@ body {
     background-color: #2E3039;
     border: none;
 }
+
+.container-main .container-contacts .box {
+    background-color: #2E3039;
+    border-radius: 8px;
+    padding: 45px;
+}
+
+.container-main .container-contacts .box .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-main .container-contacts .box .details .title {
+    font-size: 28px;
+    color: white;
+}
+
+.container-main .container-contacts .box .details .list-contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+.container-main .container-contacts .box .details .list-contacts li .link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.container-main .container-contacts .box .details .list-contacts li .bx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1F26;
+    border-radius: 50%;
+    padding: 10px;
+}
